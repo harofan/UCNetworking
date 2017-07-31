@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "VCNetworking.h"
 
 @interface ViewController ()
 
+@property (strong, nonatomic)void(^successBlock)(id obj);
 @end
 
 @implementation ViewController
@@ -17,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self setSuccessBlock:^(id obj){
+        NSLog(@"1");
+    }];
+    NSDictionary *dict = [NSDictionary dictionary];
+    [[VCNetworkingManager shareManager] postUrl:@"/getShareInfo" params:dict class:[VCBaseModel class] completion:self.successBlock];
 }
 
 

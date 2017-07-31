@@ -8,6 +8,6 @@ target 'VCreditNetworkDemo' do
   # Pods for VCreditNetworkDemo
 
 pod 'AFNetworking'
-pod ‘ReactiveObjC’
-
+pod 'ReactiveObjC'
+pod 'YYModel'
 end
