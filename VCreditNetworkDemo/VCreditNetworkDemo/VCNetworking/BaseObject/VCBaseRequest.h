@@ -13,7 +13,8 @@
 typedef NS_ENUM(NSInteger, VCNetworkRequestType) {
     VCNetworkRequestNormalType = 0,
     VCNetworkRequestDownloadType,
-    VCNetworkRequestUploadType
+    VCNetworkRequestUploadType,
+    VCNetworkRequestUploadImageType,
 };
 
 typedef NS_ENUM(NSInteger, VCHttpMethodType) {

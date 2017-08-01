@@ -7,10 +7,13 @@
 //
 
 #import "VCNetworkingManager.h"
+
 #import "VCNormalRequest.h"
 #import "VCUploadRequest.h"
 #import "VCDownloadRequest.h"
 #import "VCBaseRequest.h"
+#import "VCUploadImageRequest.h"
+
 #import "VCResponsobjParser.h"
 
 
@@ -49,24 +52,49 @@ static VCNetworkingManager *_share = nil;
     [self postUrl:url class:nil completion:completion];
 }
 
-- (void)postUrl:(NSString *)url class:(Class)classVc completion:(void (^)(id))completion {
-    [self postUrl:url params:nil class:classVc completion:completion error:nil];
+- (void)postUrl:(NSString *) url class:(Class)classObj completion:(void(^)(id)) completion{
+    [self postUrl:url params:nil class:classObj completion:completion error:nil];
 }
 
-- (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class)classVc completion:(void (^)(id))completion {
-    [self postUrl:url params:params class:classVc completion:completion error:nil];
+- (void)postUrl:(NSString *) url params:(NSDictionary *)params class:(Class)classObj completion:(void(^)(id))completion;{
+    [self postUrl:url params:params class:classObj completion:completion error:nil];
 }
 
-- (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class )cls completion : (void (^)(id))completion error : (void (^)(NSError *))failure
+- (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion error : (void (^)(NSError *))failure
 {
-    [self postUrl:url params:params class:cls completion:completion exceptions:nil error:failure];
+    [self postUrl:url params:params class:classObj completion:completion exceptions:nil error:failure];
 }
 
-- (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class )cls completion : (void (^)(id))completion exceptions:(void (^)(id))exceptions error : (void (^)(NSError *))failure
+- (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure
 {
-    NSString *getUrl = [self p_assembledUrl:url];
-    VCNormalRequest *normalRequest = (VCNormalRequest *)[[VCBaseRequest alloc] initWithUrlStr:getUrl parameters:params];
-    [normalRequest postWithClass:cls Completion:completion exceptions:exceptions error:failure];
+    NSString *postUrl = [self p_assembledUrl:url];
+    VCNormalRequest *normalRequest = (VCNormalRequest *)[[VCBaseRequest alloc] initWithUrlStr:postUrl parameters:params];
+    [normalRequest postWithClass:classObj Completion:completion exceptions:exceptions error:failure];
+}
+
+#pragma mark POST IMAGE
+- (void)postUrl:(NSString *)url images:(NSArray *)imgArray imageFilePathStr:(NSString *)imageFilePathStr progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion{
+    
+    [self postUrl:url images:imgArray params:nil imageFilePathStr:imageFilePathStr class:nil progress:progressCallBack completion:completion exceptions:nil error:nil];
+}
+
+- (void)postUrl:(NSString *)url images:(NSArray *)imgArray params:(NSDictionary *)params imageFilePathStr:(NSString *)imageFilePathStr class:(Class )classObj progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion{
+    
+    [self postUrl:url images:imgArray params:params imageFilePathStr:imageFilePathStr class:classObj progress:progressCallBack completion:completion exceptions:nil error:nil];
+}
+
+- (void)postUrl:(NSString *)url images:(NSArray *)imgArray params:(NSDictionary *)params imageFilePathStr:(NSString *)imageFilePathStr class:(Class )classObj progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion  error : (void (^)(NSError *))failure{
+    
+    [self postUrl:url images:imgArray params:params imageFilePathStr:imageFilePathStr class:classObj progress:progressCallBack completion:completion exceptions:nil error:failure];
+}
+
+- (void)postUrl:(NSString *)url images:(NSArray *)imgArray params:(NSDictionary *)params imageFilePathStr:(NSString *)imageFilePathStr class:(Class )classObj progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion exceptions:(void (^)(id))exceptions error : (void (^)(NSError *))failure{
+    
+    NSString *postUrl = [self p_assembledUrl:url];
+    
+    VCUploadImageRequest *uploadImageRequest = (VCUploadImageRequest *)[[VCBaseRequest alloc] initWithRequestType:VCNetworkRequestUploadImageType HTTPMethod:VCPostHttpType urlStr:postUrl parameters:params];
+    
+    [uploadImageRequest postWithimages:imgArray imageFilePathStr:imageFilePathStr classObj:classObj progress:progressCallBack uploadProgressCompletion:completion exceptions:exceptions error:failure];
 }
 
 #pragma mark public

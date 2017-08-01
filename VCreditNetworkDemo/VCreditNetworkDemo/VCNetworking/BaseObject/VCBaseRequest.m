@@ -11,6 +11,7 @@
 #import "VCDownloadRequest.h"
 #import "VCUploadRequest.h"
 #import "VCNetworkingManager.h"
+#import "VCUploadImageRequest.h"
 
 
 @interface VCBaseRequest ()
@@ -55,10 +56,10 @@
 - (instancetype)initWithRequestType:(VCNetworkRequestType)requestType HTTPMethod:(VCHttpMethodType)HTTPMethod urlStr:(NSString *)urlStr parameters:(NSDictionary<NSString *,NSString *> *)parameters{
     
     if (self = [super init]) {
-        _requestType = requestType;
-        _HTTPMethod = HTTPMethod;
-        _urlStr = urlStr;
-        _parameters = parameters;
+//        _requestType = requestType;
+//        _HTTPMethod = HTTPMethod;
+//        _urlStr = urlStr;
+//        _parameters = parameters;
         
         //set timeout
         [self p_setTimeOutInterval:18.f];
@@ -93,6 +94,12 @@
         case VCNetworkRequestDownloadType:
         {
             return [VCDownloadRequest new];
+        }
+            break;
+            
+        case VCNetworkRequestUploadImageType:
+        {
+            return [VCUploadImageRequest new];
         }
             break;
     }

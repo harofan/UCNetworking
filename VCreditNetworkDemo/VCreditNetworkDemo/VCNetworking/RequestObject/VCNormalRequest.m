@@ -28,6 +28,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        
+        //error call back
         [parser failure:task httpError:error class:classObj completion:completion error:failure];
     }];
 }

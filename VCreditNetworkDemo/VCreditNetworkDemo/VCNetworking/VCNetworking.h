@@ -10,12 +10,12 @@
 #define VCNetworking_h
 
 #pragma mark Base
-#import "VCBaseRequest.h"
+//#import "VCBaseRequest.h"
 
 #pragma mark request
-#import "VCNormalRequest.h"
-#import "VCDownloadRequest.h"
-#import "VCUploadRequest.h"
+//#import "VCNormalRequest.h"
+//#import "VCDownloadRequest.h"
+//#import "VCUploadRequest.h"
 
 #pragma mark manager
 #import "VCNetworkingManager.h"

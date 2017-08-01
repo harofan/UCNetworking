@@ -15,6 +15,7 @@
 		0B3525C01F2F0F8C0076F0CC /* VCResponsobjParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525BF1F2F0F8C0076F0CC /* VCResponsobjParser.m */; };
 		0B3525C31F2F14700076F0CC /* VCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525C21F2F14700076F0CC /* VCBaseModel.m */; };
 		0B3525C61F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525C51F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m */; };
+		0B3525C91F300D840076F0CC /* VCUploadImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525C81F300D840076F0CC /* VCUploadImageRequest.m */; };
 		0BE432181F2ED418008A0B3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE432171F2ED418008A0B3A /* main.m */; };
 		0BE4321B1F2ED418008A0B3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321A1F2ED418008A0B3A /* AppDelegate.m */; };
 		0BE4321E1F2ED418008A0B3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321D1F2ED418008A0B3A /* ViewController.m */; };
@@ -42,6 +43,8 @@
 		0B3525C21F2F14700076F0CC /* VCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseModel.m; sourceTree = "<group>"; };
 		0B3525C41F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VCNetworkingManager+FailureHandler.h"; sourceTree = "<group>"; };
 		0B3525C51F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VCNetworkingManager+FailureHandler.m"; sourceTree = "<group>"; };
+		0B3525C71F300D840076F0CC /* VCUploadImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCUploadImageRequest.h; sourceTree = "<group>"; };
+		0B3525C81F300D840076F0CC /* VCUploadImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCUploadImageRequest.m; sourceTree = "<group>"; };
 		0BE432131F2ED418008A0B3A /* VCreditNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCreditNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE432171F2ED418008A0B3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BE432191F2ED418008A0B3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				0B3525B51F2EF8FC0076F0CC /* VCDownloadRequest.m */,
 				0B3525B71F2EF90E0076F0CC /* VCUploadRequest.h */,
 				0B3525B81F2EF90E0076F0CC /* VCUploadRequest.m */,
+				0B3525C71F300D840076F0CC /* VCUploadImageRequest.h */,
+				0B3525C81F300D840076F0CC /* VCUploadImageRequest.m */,
 			);
 			path = RequestObject;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				0B3525B31F2EF8D80076F0CC /* VCNormalRequest.m in Sources */,
 				0B3525C61F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m in Sources */,
 				0B3525B01F2EDBDB0076F0CC /* VCBaseRequest.m in Sources */,
+				0B3525C91F300D840076F0CC /* VCUploadImageRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
