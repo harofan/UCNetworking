@@ -51,11 +51,11 @@
 - (void)postUrl:(NSString *)url images:(NSArray *)imgArray params:(NSDictionary *)params imageFilePathStr:(NSString *)imageFilePathStr class:(Class )classObj progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion exceptions:(void (^)(id))exceptions error : (void (^)(NSError *))failure;
 
 #pragma mark GET
-- (void)getUrl:(NSString *) url;
-- (void)getUrl:(NSString *) url class:(Class)classVc completion:(void(^)(id)) completion;
-- (void)getUrl:(NSString *) url params:(NSDictionary *)params class:(Class)classVc completion:(void(^)(id)) completion;
-- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )cls completion : (void (^)(id))completion  error : (void (^)(NSError *))failure;
-- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )cls completion : (void (^)(id))completion exceptions:(void (^)(id))exceptions error : (void (^)(NSError *))failure;
+- (void)getUrl:(NSString *)url;
+- (void)getUrl:(NSString *)url class:(Class)classObj completion:(void(^)(id))completion;
+- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class)classObj completion:(void(^)(id))completion;
+- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion  error:(void (^)(NSError *))failure;
+- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure;
 
 #pragma mark HTTP Header
 /**

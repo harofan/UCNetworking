@@ -1,16 +1,16 @@
 //
-//  VCNormalRequest.m
+//  VCPostRequest.m
 //  VCreditNetworkDemo
 //
-//  Created by SkyHarute on 2017/7/31.
+//  Created by SkyHarute on 2017/8/4.
 //  Copyright © 2017年 SkyHarute. All rights reserved.
 //
 
-#import "VCNormalRequest.h"
+#import "VCPostRequest.h"
 #import "VCNetworkingManager.h"
 #import "VCResponsobjParser.h"
 
-@implementation VCNormalRequest
+@implementation VCPostRequest
 
 - (void)postWithClass:(Class)classObj Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure{
     
@@ -33,4 +33,5 @@
         [parser failure:task httpError:error class:classObj completion:completion error:failure];
     }];
 }
+
 @end

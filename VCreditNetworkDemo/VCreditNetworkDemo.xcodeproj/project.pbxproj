@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0B3525B01F2EDBDB0076F0CC /* VCBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525AF1F2EDBDB0076F0CC /* VCBaseRequest.m */; };
-		0B3525B31F2EF8D80076F0CC /* VCNormalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525B21F2EF8D80076F0CC /* VCNormalRequest.m */; };
 		0B3525B61F2EF8FC0076F0CC /* VCDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525B51F2EF8FC0076F0CC /* VCDownloadRequest.m */; };
 		0B3525B91F2EF90E0076F0CC /* VCUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525B81F2EF90E0076F0CC /* VCUploadRequest.m */; };
 		0B3525BC1F2EFD8C0076F0CC /* VCNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525BB1F2EFD8C0076F0CC /* VCNetworkingManager.m */; };
@@ -16,6 +15,8 @@
 		0B3525C31F2F14700076F0CC /* VCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525C21F2F14700076F0CC /* VCBaseModel.m */; };
 		0B3525C61F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525C51F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m */; };
 		0B3525C91F300D840076F0CC /* VCUploadImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525C81F300D840076F0CC /* VCUploadImageRequest.m */; };
+		0B68C8D81F3487A1002A39A2 /* VCPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B68C8D71F3487A1002A39A2 /* VCPostRequest.m */; };
+		0B68C8DB1F348807002A39A2 /* VCGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B68C8DA1F348807002A39A2 /* VCGetRequest.m */; };
 		0BE432181F2ED418008A0B3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE432171F2ED418008A0B3A /* main.m */; };
 		0BE4321B1F2ED418008A0B3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321A1F2ED418008A0B3A /* AppDelegate.m */; };
 		0BE4321E1F2ED418008A0B3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321D1F2ED418008A0B3A /* ViewController.m */; };
@@ -29,8 +30,6 @@
 		0B3525AD1F2EDBB00076F0CC /* VCNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCNetworking.h; sourceTree = "<group>"; };
 		0B3525AE1F2EDBDB0076F0CC /* VCBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseRequest.h; sourceTree = "<group>"; };
 		0B3525AF1F2EDBDB0076F0CC /* VCBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseRequest.m; sourceTree = "<group>"; };
-		0B3525B11F2EF8D80076F0CC /* VCNormalRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNormalRequest.h; sourceTree = "<group>"; };
-		0B3525B21F2EF8D80076F0CC /* VCNormalRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNormalRequest.m; sourceTree = "<group>"; };
 		0B3525B41F2EF8FC0076F0CC /* VCDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDownloadRequest.h; sourceTree = "<group>"; };
 		0B3525B51F2EF8FC0076F0CC /* VCDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDownloadRequest.m; sourceTree = "<group>"; };
 		0B3525B71F2EF90E0076F0CC /* VCUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCUploadRequest.h; sourceTree = "<group>"; };
@@ -45,6 +44,10 @@
 		0B3525C51F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VCNetworkingManager+FailureHandler.m"; sourceTree = "<group>"; };
 		0B3525C71F300D840076F0CC /* VCUploadImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCUploadImageRequest.h; sourceTree = "<group>"; };
 		0B3525C81F300D840076F0CC /* VCUploadImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCUploadImageRequest.m; sourceTree = "<group>"; };
+		0B68C8D61F3487A1002A39A2 /* VCPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCPostRequest.h; sourceTree = "<group>"; };
+		0B68C8D71F3487A1002A39A2 /* VCPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCPostRequest.m; sourceTree = "<group>"; };
+		0B68C8D91F348807002A39A2 /* VCGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCGetRequest.h; sourceTree = "<group>"; };
+		0B68C8DA1F348807002A39A2 /* VCGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCGetRequest.m; sourceTree = "<group>"; };
 		0BE432131F2ED418008A0B3A /* VCreditNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCreditNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE432171F2ED418008A0B3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BE432191F2ED418008A0B3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,8 +90,10 @@
 		0B3525AA1F2EDB8A0076F0CC /* RequestObject */ = {
 			isa = PBXGroup;
 			children = (
-				0B3525B11F2EF8D80076F0CC /* VCNormalRequest.h */,
-				0B3525B21F2EF8D80076F0CC /* VCNormalRequest.m */,
+				0B68C8D61F3487A1002A39A2 /* VCPostRequest.h */,
+				0B68C8D71F3487A1002A39A2 /* VCPostRequest.m */,
+				0B68C8D91F348807002A39A2 /* VCGetRequest.h */,
+				0B68C8DA1F348807002A39A2 /* VCGetRequest.m */,
 				0B3525B41F2EF8FC0076F0CC /* VCDownloadRequest.h */,
 				0B3525B51F2EF8FC0076F0CC /* VCDownloadRequest.m */,
 				0B3525B71F2EF90E0076F0CC /* VCUploadRequest.h */,
@@ -315,15 +320,16 @@
 				0B3525B91F2EF90E0076F0CC /* VCUploadRequest.m in Sources */,
 				0BE4321E1F2ED418008A0B3A /* ViewController.m in Sources */,
 				0BE4321B1F2ED418008A0B3A /* AppDelegate.m in Sources */,
+				0B68C8D81F3487A1002A39A2 /* VCPostRequest.m in Sources */,
 				0B3525C31F2F14700076F0CC /* VCBaseModel.m in Sources */,
 				0B3525B61F2EF8FC0076F0CC /* VCDownloadRequest.m in Sources */,
 				0B3525C01F2F0F8C0076F0CC /* VCResponsobjParser.m in Sources */,
 				0B3525BC1F2EFD8C0076F0CC /* VCNetworkingManager.m in Sources */,
 				0BE432181F2ED418008A0B3A /* main.m in Sources */,
-				0B3525B31F2EF8D80076F0CC /* VCNormalRequest.m in Sources */,
 				0B3525C61F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m in Sources */,
 				0B3525B01F2EDBDB0076F0CC /* VCBaseRequest.m in Sources */,
 				0B3525C91F300D840076F0CC /* VCUploadImageRequest.m in Sources */,
+				0B68C8DB1F348807002A39A2 /* VCGetRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

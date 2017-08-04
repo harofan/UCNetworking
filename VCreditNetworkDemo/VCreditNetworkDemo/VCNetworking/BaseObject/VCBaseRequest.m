@@ -7,7 +7,8 @@
 //
 
 #import "VCBaseRequest.h"
-#import "VCNormalRequest.h"
+#import "VCPostRequest.h"
+#import "VCGetRequest.h"
 #import "VCDownloadRequest.h"
 #import "VCUploadRequest.h"
 #import "VCNetworkingManager.h"
@@ -47,7 +48,7 @@
  */
 - (instancetype)initWithUrlStr:(NSString *)urlStr parameters:(NSDictionary<NSString *,NSString *> *)parameters{
     
-    return [self initWithRequestType:VCNetworkRequestNormalType HTTPMethod:VCPostHttpType urlStr:urlStr parameters:parameters];
+    return [self initWithRequestType:VCNetworkRequestPostType HTTPMethod:VCPostHttpType urlStr:urlStr parameters:parameters];
 }
 
 /**
@@ -61,8 +62,9 @@
 //        _urlStr = urlStr;
 //        _parameters = parameters;
         
-        //set timeout
+        //set timeout.If you do not need to set the timeout for each request, you can set the manage class uniformly.
         [self p_setTimeOutInterval:18.f];
+        
         //Create a request.
         VCBaseRequest *baseRequest = [self p_createRequestWithRequestType:requestType];
         baseRequest.urlStr = urlStr;
@@ -79,9 +81,15 @@
 - (instancetype)p_createRequestWithRequestType:(VCNetworkRequestType)requestType{
     
     switch (requestType) {
-        case VCNetworkRequestNormalType:
+        case VCNetworkRequestPostType:
         {
-            return [VCNormalRequest new];
+            return [VCPostRequest new];
+        }
+            break;
+            
+        case VCNetworkRequestGetType:
+        {
+            return [VCGetRequest new];
         }
             break;
             
@@ -103,7 +111,7 @@
         }
             break;
     }
-    return [VCNormalRequest new];
+    return [VCPostRequest new];
 }
 
 - (void)p_setTimeOutInterval:(CGFloat)timeoutInterval{

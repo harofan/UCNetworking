@@ -11,7 +11,8 @@
 //#import "VCResponsobjParser.h"
 
 typedef NS_ENUM(NSInteger, VCNetworkRequestType) {
-    VCNetworkRequestNormalType = 0,
+    VCNetworkRequestPostType = 0,
+    VCNetworkRequestGetType,
     VCNetworkRequestDownloadType,
     VCNetworkRequestUploadType,
     VCNetworkRequestUploadImageType,

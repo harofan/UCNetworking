@@ -7,8 +7,8 @@
 //
 
 #import "VCNetworkingManager.h"
-
-#import "VCNormalRequest.h"
+#import "VCPostRequest.h"
+#import "VCGetRequest.h"
 #import "VCUploadRequest.h"
 #import "VCDownloadRequest.h"
 #import "VCBaseRequest.h"
@@ -68,8 +68,32 @@ static VCNetworkingManager *_share = nil;
 - (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure
 {
     NSString *postUrl = [self p_assembledUrl:url];
-    VCNormalRequest *normalRequest = (VCNormalRequest *)[[VCBaseRequest alloc] initWithUrlStr:postUrl parameters:params];
-    [normalRequest postWithClass:classObj Completion:completion exceptions:exceptions error:failure];
+    VCPostRequest *postRequest = (VCPostRequest *)[[VCBaseRequest alloc] initWithUrlStr:postUrl parameters:params];
+    [postRequest postWithClass:classObj Completion:completion exceptions:exceptions error:failure];
+}
+
+#pragma mark GET
+- (void)getUrl:(NSString *)url{
+    [self getUrl:url params:nil class:nil completion:nil exceptions:nil error:nil];
+}
+
+- (void)getUrl:(NSString *)url class:(Class)classObj completion:(void(^)(id))completion{
+    [self getUrl:url params:nil class:classObj completion:completion exceptions:nil error:nil];
+}
+
+- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class)classObj completion:(void(^)(id))completion{
+    [self getUrl:url params:params class:classObj completion:completion exceptions:nil error:nil];
+}
+
+- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion  error:(void (^)(NSError *))failure{
+    [self getUrl:url params:params class:classObj completion:completion exceptions:nil error:failure];
+}
+
+- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure{
+    
+    NSString *getUrl = [self p_assembledUrl:url];
+    VCGetRequest *getRequest = (VCGetRequest *)[[VCBaseRequest alloc] initWithRequestType:VCNetworkRequestGetType HTTPMethod:VCGetHttpType urlStr:getUrl parameters:params];
+    [getRequest getWithClass:classObj Completion:completion exceptions:exceptions error:failure];
 }
 
 #pragma mark POST IMAGE
@@ -110,6 +134,22 @@ static VCNetworkingManager *_share = nil;
         return urlStr;
     else
         return [NSString stringWithFormat:@"%@%@", self.baseUrl, url];
+}
+/**
+ check net states
+ */
+- (void)p_setReachableMonitorOn:(BOOL)isOn {
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    if (isOn) {
+        [manager startMonitoring];
+        [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+            if (self.delegate && [self.delegate respondsToSelector:@selector(networingManager:statusChanged:)]) {
+                [self.delegate networingManager:self statusChanged:status];
+            }
+        }];
+    } else {
+        [manager stopMonitoring];
+    }
 }
 
 #pragma mark set && get
