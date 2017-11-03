@@ -72,6 +72,13 @@ static VCNetworkingManager *_share = nil;
     [postRequest postWithClass:classObj Completion:completion exceptions:exceptions error:failure];
 }
 
+#pragma mark post cache
+- (void)postUrl:(NSString *)url cacheUrl:(NSString *)cacheUrl params:(NSDictionary *)params class:(Class)classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure chcheObjectCallBackBlock:(void(^)(id cacheObj))chcheObjectCallBackBlock{
+    NSString *postUrl = [self p_assembledUrl:url];
+    VCPostRequest *postRequest = (VCPostRequest *)[[VCBaseRequest alloc] initWithUrlStr:postUrl parameters:params];
+    [postRequest postWithClass:classObj Completion:completion exceptions:exceptions error:failure cacheUrlStr:cacheUrl chcheObjectCallBackBlock:chcheObjectCallBackBlock];
+}
+
 #pragma mark GET
 - (void)getUrl:(NSString *)url{
     [self getUrl:url params:nil class:nil completion:nil exceptions:nil error:nil];

@@ -23,7 +23,6 @@
     if (!exceptions && networkManager.delegate && [networkManager.delegate respondsToSelector:@selector(networingManager:filterResponse:error:)]){
         if ([networkManager.delegate networingManager:networkManager filterResponse:dict error:nil]) {
 
-            
             return;
         }
     }

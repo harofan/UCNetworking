@@ -15,4 +15,9 @@
  */
 - (void)postWithClass:(Class)classObj Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure;
 
+/**
+ post with cache
+ */
+- (void)postWithClass:(Class)classObj Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure cacheUrlStr:(NSString *)cacheUrlStr chcheObjectCallBackBlock:(void(^)(id cacheObject))chcheObjectCallBackBlock;
+
 @end

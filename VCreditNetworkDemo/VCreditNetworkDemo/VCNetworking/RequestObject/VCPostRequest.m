@@ -9,10 +9,29 @@
 #import "VCPostRequest.h"
 #import "VCNetworkingManager.h"
 #import "VCResponsobjParser.h"
+#import "VCCacheManger.h"
 
 @implementation VCPostRequest
 
 - (void)postWithClass:(Class)classObj Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure{
+    
+    [self p_postWithClass:classObj isCache:NO cacheUrlStr:nil Completion:completion exceptions:exceptions error:failure];
+}
+
+- (void)postWithClass:(Class)classObj Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure cacheUrlStr:(NSString *)cacheUrlStr chcheObjectCallBackBlock:(void (^)(id))chcheObjectCallBackBlock{
+    
+    //read local disk cache
+    if ([[VCCacheManger shareManager] objectIsInCacheWithUrlStr:cacheUrlStr]) {
+        id obj = [[VCCacheManger shareManager] readDataFromCacheWithUrlStr:cacheUrlStr];
+        if (!obj) {
+            chcheObjectCallBackBlock(obj);
+        }
+    }
+    [self p_postWithClass:classObj isCache:YES cacheUrlStr:cacheUrlStr Completion:completion exceptions:exceptions error:failure];
+}
+
+#pragma mark private
+- (void)p_postWithClass:(Class)classObj isCache:(BOOL)isCache cacheUrlStr:(NSString *)cacheUrlStr Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure{
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
@@ -22,6 +41,11 @@
     [manager POST:self.urlStr parameters:self.parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        
+        //cache data to disk
+        if (isCache) {
+            [[VCCacheManger shareManager] saveDataWithObject:responseObject urlStr:cacheUrlStr];
+        }
         
         //success call back
         [parser success:task reponseObject:responseObject class:classObj completion:completion exceptions:exceptions error:failure];
