@@ -17,6 +17,7 @@
 		0B3525C91F300D840076F0CC /* VCUploadImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525C81F300D840076F0CC /* VCUploadImageRequest.m */; };
 		0B68C8D81F3487A1002A39A2 /* VCPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B68C8D71F3487A1002A39A2 /* VCPostRequest.m */; };
 		0B68C8DB1F348807002A39A2 /* VCGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B68C8DA1F348807002A39A2 /* VCGetRequest.m */; };
+		0B8124651FAC1D95006B6BCB /* VCCacheManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8124641FAC1D95006B6BCB /* VCCacheManger.m */; };
 		0BE432181F2ED418008A0B3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE432171F2ED418008A0B3A /* main.m */; };
 		0BE4321B1F2ED418008A0B3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321A1F2ED418008A0B3A /* AppDelegate.m */; };
 		0BE4321E1F2ED418008A0B3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321D1F2ED418008A0B3A /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		0B68C8D71F3487A1002A39A2 /* VCPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCPostRequest.m; sourceTree = "<group>"; };
 		0B68C8D91F348807002A39A2 /* VCGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCGetRequest.h; sourceTree = "<group>"; };
 		0B68C8DA1F348807002A39A2 /* VCGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCGetRequest.m; sourceTree = "<group>"; };
+		0B8124631FAC1D95006B6BCB /* VCCacheManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCCacheManger.h; sourceTree = "<group>"; };
+		0B8124641FAC1D95006B6BCB /* VCCacheManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCCacheManger.m; sourceTree = "<group>"; };
 		0BE432131F2ED418008A0B3A /* VCreditNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCreditNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE432171F2ED418008A0B3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BE432191F2ED418008A0B3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				0B3525AD1F2EDBB00076F0CC /* VCNetworking.h */,
+				0B8124621FAC1CBC006B6BCB /* Cache */,
 				0B3525BD1F2F0F510076F0CC /* RespondobjParser */,
 				0B3525AA1F2EDB8A0076F0CC /* RequestObject */,
 				0B3525AB1F2EDB8A0076F0CC /* Manager */,
@@ -133,6 +137,15 @@
 				0B3525BF1F2F0F8C0076F0CC /* VCResponsobjParser.m */,
 			);
 			path = RespondobjParser;
+			sourceTree = "<group>";
+		};
+		0B8124621FAC1CBC006B6BCB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				0B8124631FAC1D95006B6BCB /* VCCacheManger.h */,
+				0B8124641FAC1D95006B6BCB /* VCCacheManger.m */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		0BE4320A1F2ED418008A0B3A = {
@@ -224,11 +237,12 @@
 		0BE4320B1F2ED418008A0B3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = SkyHarute;
 				TargetAttributes = {
 					0BE432121F2ED418008A0B3A = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 56M98M5X7T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -328,6 +342,7 @@
 				0BE432181F2ED418008A0B3A /* main.m in Sources */,
 				0B3525C61F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m in Sources */,
 				0B3525B01F2EDBDB0076F0CC /* VCBaseRequest.m in Sources */,
+				0B8124651FAC1D95006B6BCB /* VCCacheManger.m in Sources */,
 				0B3525C91F300D840076F0CC /* VCUploadImageRequest.m in Sources */,
 				0B68C8DB1F348807002A39A2 /* VCGetRequest.m in Sources */,
 			);
@@ -365,7 +380,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -373,7 +390,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -414,7 +435,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -422,7 +445,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -452,6 +479,7 @@
 			baseConfigurationReference = 93427559F1375B2AB8BBD4F6 /* Pods-VCreditNetworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56M98M5X7T;
 				INFOPLIST_FILE = VCreditNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkyHarute.VCreditNetworkDemo;
@@ -464,6 +492,7 @@
 			baseConfigurationReference = F257193C594E993891B891DA /* Pods-VCreditNetworkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56M98M5X7T;
 				INFOPLIST_FILE = VCreditNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkyHarute.VCreditNetworkDemo;

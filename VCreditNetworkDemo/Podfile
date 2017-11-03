@@ -10,4 +10,5 @@ target 'VCreditNetworkDemo' do
 pod 'AFNetworking'
 pod 'ReactiveObjC'
 pod 'YYModel'
+pod 'YYCache'
 end
