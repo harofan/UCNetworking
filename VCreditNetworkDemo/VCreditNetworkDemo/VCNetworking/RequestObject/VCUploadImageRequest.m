@@ -66,13 +66,13 @@ uploadProgressCompletion:(void (^)(id))completion
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         //success call back
-        [parser success:task reponseObject:responseObject class:classObj completion:completion exceptions:exceptions error:failure];
+        [parser success:task reponseObject:responseObject class:classObj completion:completion exceptions:exceptions failure:failure];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         //error call back
-        [parser failure:task httpError:error class:classObj completion:completion error:failure];
+        [parser failure:task httpError:error class:classObj completion:completion failure:failure];
     }];
 
     

@@ -10,9 +10,9 @@
 
 @interface VCResponsobjParser : NSObject
 
-- (void)success:(NSURLSessionDataTask *)task reponseObject:(id)responseObject class:(Class)classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))error;
+- (void)success:(NSURLSessionDataTask *)task reponseObject:(id)responseObject class:(Class)classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions failure:(void (^)(NSError *))failure;
 
-- (void)failure:(NSURLSessionDataTask *)task httpError:(id)httpError class:(Class)classObj completion:(void (^)(id))completion error:(void (^)(NSError *))failre;
+- (void)failure:(NSURLSessionDataTask *)task httpError:(id)httpError class:(Class)classObj completion:(void (^)(id))completion failure:(void (^)(NSError *))failure;
 
 
 @end

@@ -14,7 +14,7 @@
 
 @implementation VCResponsobjParser
 
-- (void)success:(NSURLSessionDataTask *)task reponseObject:(id)responseObject class:(Class)classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))error{
+- (void)success:(NSURLSessionDataTask *)task reponseObject:(id)responseObject class:(Class)classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions failure:(void (^)(NSError *))failure{
     
     NSDictionary *dict = (NSDictionary *)responseObject;
     
@@ -55,7 +55,7 @@
     }
 }
 
-- (void)failure:(NSURLSessionDataTask *)task httpError:(id)httpError class:(Class)classObj completion:(void (^)(id))completion error:(void (^)(NSError *))failre{
+- (void)failure:(NSURLSessionDataTask *)task httpError:(id)httpError class:(Class)classObj completion:(void (^)(id))completion failure:(void (^)(NSError *error))failure{
     
     if (!task) {
         return;
@@ -72,11 +72,13 @@
     
     NSURLSessionDataTask *currnetTask =  [networkManager.manager dataTaskWithRequest:task.currentRequest  completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error){
         if (error) {
-            [self failure:task httpError:error class:classObj completion:completion error:failre];
+            [self failure:task httpError:error class:classObj completion:completion failure:failure];
         }else {
-            [self success:task reponseObject:responseObject class:classObj completion:completion exceptions:nil error:failre];
+            [self success:task reponseObject:responseObject class:classObj completion:completion exceptions:nil failure:failure];
         }
     }];
     [networkManager.failureQueue addObject:currnetTask];
+    
+    failure(httpError);
 }
 @end

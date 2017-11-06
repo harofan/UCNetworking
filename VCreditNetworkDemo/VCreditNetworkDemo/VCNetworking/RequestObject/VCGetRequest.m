@@ -25,12 +25,12 @@
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         //success callback
-        [parser success:task reponseObject:responseObject class:classObj completion:completion exceptions:exceptions error:failure];
+        [parser success:task reponseObject:responseObject class:classObj completion:completion exceptions:exceptions failure:failure];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         //error callback
-        [parser failure:task httpError:error class:classObj completion:completion error:failure];
+        [parser failure:task httpError:error class:classObj completion:completion failure:failure];
     }];
 }
 @end

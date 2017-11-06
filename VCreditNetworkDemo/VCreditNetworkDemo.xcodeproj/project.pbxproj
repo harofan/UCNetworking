@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1CD8C11FAFF251005E8BCA /* VCPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1CD8BF1FAFF251005E8BCA /* VCPostController.m */; };
+		0B1CD8C21FAFF251005E8BCA /* VCPostController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1CD8C01FAFF251005E8BCA /* VCPostController.xib */; };
 		0B3525B01F2EDBDB0076F0CC /* VCBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525AF1F2EDBDB0076F0CC /* VCBaseRequest.m */; };
 		0B3525B61F2EF8FC0076F0CC /* VCDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525B51F2EF8FC0076F0CC /* VCDownloadRequest.m */; };
 		0B3525B91F2EF90E0076F0CC /* VCUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3525B81F2EF90E0076F0CC /* VCUploadRequest.m */; };
@@ -18,6 +20,7 @@
 		0B68C8D81F3487A1002A39A2 /* VCPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B68C8D71F3487A1002A39A2 /* VCPostRequest.m */; };
 		0B68C8DB1F348807002A39A2 /* VCGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B68C8DA1F348807002A39A2 /* VCGetRequest.m */; };
 		0B8124651FAC1D95006B6BCB /* VCCacheManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8124641FAC1D95006B6BCB /* VCCacheManger.m */; };
+		0B8124681FAC422F006B6BCB /* VCShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8124671FAC422F006B6BCB /* VCShareModel.m */; };
 		0BE432181F2ED418008A0B3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE432171F2ED418008A0B3A /* main.m */; };
 		0BE4321B1F2ED418008A0B3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321A1F2ED418008A0B3A /* AppDelegate.m */; };
 		0BE4321E1F2ED418008A0B3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4321D1F2ED418008A0B3A /* ViewController.m */; };
@@ -28,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B1CD8BE1FAFF251005E8BCA /* VCPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCPostController.h; sourceTree = "<group>"; };
+		0B1CD8BF1FAFF251005E8BCA /* VCPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCPostController.m; sourceTree = "<group>"; };
+		0B1CD8C01FAFF251005E8BCA /* VCPostController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VCPostController.xib; sourceTree = "<group>"; };
+		0B1CD8C31FAFF381005E8BCA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0B3525AD1F2EDBB00076F0CC /* VCNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCNetworking.h; sourceTree = "<group>"; };
 		0B3525AE1F2EDBDB0076F0CC /* VCBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseRequest.h; sourceTree = "<group>"; };
 		0B3525AF1F2EDBDB0076F0CC /* VCBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseRequest.m; sourceTree = "<group>"; };
@@ -51,6 +58,8 @@
 		0B68C8DA1F348807002A39A2 /* VCGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCGetRequest.m; sourceTree = "<group>"; };
 		0B8124631FAC1D95006B6BCB /* VCCacheManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCCacheManger.h; sourceTree = "<group>"; };
 		0B8124641FAC1D95006B6BCB /* VCCacheManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCCacheManger.m; sourceTree = "<group>"; };
+		0B8124661FAC422F006B6BCB /* VCShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCShareModel.h; sourceTree = "<group>"; };
+		0B8124671FAC422F006B6BCB /* VCShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCShareModel.m; sourceTree = "<group>"; };
 		0BE432131F2ED418008A0B3A /* VCreditNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCreditNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE432171F2ED418008A0B3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BE432191F2ED418008A0B3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +157,18 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		0B8124691FAC4360006B6BCB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0B8124661FAC422F006B6BCB /* VCShareModel.h */,
+				0B8124671FAC422F006B6BCB /* VCShareModel.m */,
+				0B1CD8BE1FAFF251005E8BCA /* VCPostController.h */,
+				0B1CD8BF1FAFF251005E8BCA /* VCPostController.m */,
+				0B1CD8C01FAFF251005E8BCA /* VCPostController.xib */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		0BE4320A1F2ED418008A0B3A = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +195,9 @@
 				0BE4321A1F2ED418008A0B3A /* AppDelegate.m */,
 				0BE4321C1F2ED418008A0B3A /* ViewController.h */,
 				0BE4321D1F2ED418008A0B3A /* ViewController.m */,
+				0B8124691FAC4360006B6BCB /* Class */,
 				0BE4321F1F2ED418008A0B3A /* Main.storyboard */,
+				0B1CD8C31FAFF381005E8BCA /* PrefixHeader.pch */,
 				0BE432221F2ED418008A0B3A /* Assets.xcassets */,
 				0BE432241F2ED418008A0B3A /* LaunchScreen.storyboard */,
 				0BE432271F2ED418008A0B3A /* Info.plist */,
@@ -270,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1CD8C21FAFF251005E8BCA /* VCPostController.xib in Resources */,
 				0BE432261F2ED418008A0B3A /* LaunchScreen.storyboard in Resources */,
 				0BE432231F2ED418008A0B3A /* Assets.xcassets in Resources */,
 				0BE432211F2ED418008A0B3A /* Main.storyboard in Resources */,
@@ -331,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1CD8C11FAFF251005E8BCA /* VCPostController.m in Sources */,
 				0B3525B91F2EF90E0076F0CC /* VCUploadRequest.m in Sources */,
 				0BE4321E1F2ED418008A0B3A /* ViewController.m in Sources */,
 				0BE4321B1F2ED418008A0B3A /* AppDelegate.m in Sources */,
@@ -341,6 +366,7 @@
 				0B3525BC1F2EFD8C0076F0CC /* VCNetworkingManager.m in Sources */,
 				0BE432181F2ED418008A0B3A /* main.m in Sources */,
 				0B3525C61F2F1CE70076F0CC /* VCNetworkingManager+FailureHandler.m in Sources */,
+				0B8124681FAC422F006B6BCB /* VCShareModel.m in Sources */,
 				0B3525B01F2EDBDB0076F0CC /* VCBaseRequest.m in Sources */,
 				0B8124651FAC1D95006B6BCB /* VCCacheManger.m in Sources */,
 				0B3525C91F300D840076F0CC /* VCUploadImageRequest.m in Sources */,
@@ -480,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 56M98M5X7T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = VCreditNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkyHarute.VCreditNetworkDemo;
@@ -493,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 56M98M5X7T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = VCreditNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkyHarute.VCreditNetworkDemo;
