@@ -37,28 +37,89 @@
 + (instancetype)shareManager;
 
 #pragma mark POST
-- (void)postUrl:(NSString *) url;
-- (void)postUrl:(NSString *) url completion:(void(^)(id)) completion;
-- (void)postUrl:(NSString *) url class:(Class)classObj completion:(void(^)(id)) completion;
-- (void)postUrl:(NSString *) url params:(NSDictionary *)params class:(Class)classObj completion:(void(^)(id)) completion;
-- (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion error : (void (^)(NSError *))failure;
-- (void)postUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure;
+- (void)postUrl:(NSString *)url;
+- (void)postUrl:(NSString *)url
+     completion:(void(^)(id))completion;
+- (void)postUrl:(NSString *)url
+          class:(Class)classObj
+     completion:(void(^)(id))completion;
+- (void)postUrl:(NSString *)url
+         params:(NSDictionary *)params
+          class:(Class)classObj
+     completion:(void(^)(id))completion;
+- (void)postUrl:(NSString *)url
+         params:(NSDictionary *)params
+          class:(Class)classObj
+     completion:(void (^)(id))completion
+          error:(void (^)(NSError *))failure;
+- (void)postUrl:(NSString *)url
+         params:(NSDictionary *)params
+          class:(Class)classObj
+     completion:(void(^)(id))completion
+     exceptions:(void(^)(id))exceptions
+          error:(void(^)(NSError *))failure;
 
 #pragma mark POST CACHE
-- (void)postUrl:(NSString *)url cacheUrl:(NSString *)cacheUrl params:(NSDictionary *)params class:(Class)classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure chcheObjectCallBackBlock:(void(^)(id cacheObj))chcheObjectCallBackBlock;
+- (void)postUrl:(NSString *)url
+       cacheUrl:(NSString *)cacheUrl
+         params:(NSDictionary *)params
+          class:(Class)classObj
+     completion:(void(^)(id))completion
+     exceptions:(void(^)(id))exceptions
+          error:(void(^)(NSError *))failure
+chcheObjectCallBackBlock:(void(^)(id cacheObj))chcheObjectCallBackBlock;
 
 #pragma mark POST IMAGE
-- (void)postUrl:(NSString *)url images:(NSArray *)imgArray imageFilePathStr:(NSString *)imageFilePathStr progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion;
-- (void)postUrl:(NSString *)url images:(NSArray *)imgArray params:(NSDictionary *)params imageFilePathStr:(NSString *)imageFilePathStr class:(Class )classObj progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion;
-- (void)postUrl:(NSString *)url images:(NSArray *)imgArray params:(NSDictionary *)params imageFilePathStr:(NSString *)imageFilePathStr class:(Class )classObj progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion  error : (void (^)(NSError *))failure;
-- (void)postUrl:(NSString *)url images:(NSArray *)imgArray params:(NSDictionary *)params imageFilePathStr:(NSString *)imageFilePathStr class:(Class )classObj progress:(void (^)(NSProgress *  ))progressCallBack completion : (void (^)(id))completion exceptions:(void (^)(id))exceptions error : (void (^)(NSError *))failure;
+- (void)postUrl:(NSString *)url
+         images:(NSArray *)imgArray
+imageFilePathStr:(NSString *)imageFilePathStr
+       progress:(void(^)(NSProgress *))progressCallBack
+     completion:(void (^)(id))completion;
+- (void)postUrl:(NSString *)url
+         images:(NSArray *)imgArray
+         params:(NSDictionary *)params
+imageFilePathStr:(NSString *)imageFilePathStr
+          class:(Class)classObj
+       progress:(void(^)(NSProgress *))progressCallBack
+     completion:(void (^)(id))completion;
+- (void)postUrl:(NSString *)url
+         images:(NSArray *)imgArray
+         params:(NSDictionary *)params
+imageFilePathStr:(NSString *)imageFilePathStr
+          class:(Class)classObj
+       progress:(void(^)(NSProgress *))progressCallBack
+     completion:(void(^)(id))completion
+          error:(void(^)(NSError *))failure;
+- (void)postUrl:(NSString *)url
+         images:(NSArray *)imgArray
+         params:(NSDictionary *)params
+imageFilePathStr:(NSString *)imageFilePathStr
+          class:(Class)classObj
+       progress:(void(^)(NSProgress *))progressCallBack
+     completion:(void(^)(id))completion
+     exceptions:(void(^)(id))exceptions
+          error:(void(^)(NSError *))failure;
 
 #pragma mark GET
 - (void)getUrl:(NSString *)url;
-- (void)getUrl:(NSString *)url class:(Class)classObj completion:(void(^)(id))completion;
-- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class)classObj completion:(void(^)(id))completion;
-- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion  error:(void (^)(NSError *))failure;
-- (void)getUrl:(NSString *)url params:(NSDictionary *)params class:(Class )classObj completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure;
+- (void)getUrl:(NSString *)url
+         class:(Class)classObj
+    completion:(void(^)(id))completion;
+- (void)getUrl:(NSString *)url
+        params:(NSDictionary *)params
+         class:(Class)classObj
+    completion:(void(^)(id))completion;
+- (void)getUrl:(NSString *)url
+        params:(NSDictionary *)params
+         class:(Class)classObj
+    completion:(void(^)(id))completion
+         error:(void(^)(NSError *))failure;
+- (void)getUrl:(NSString *)url
+        params:(NSDictionary *)params
+         class:(Class )classObj
+    completion:(void(^)(id))completion
+    exceptions:(void(^)(id))exceptions
+         error:(void(^)(NSError *))failure;
 
 #pragma mark HTTP Header
 /**
