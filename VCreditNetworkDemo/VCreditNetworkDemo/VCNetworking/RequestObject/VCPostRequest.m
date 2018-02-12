@@ -18,13 +18,13 @@
     [self p_postWithClass:classObj isCache:NO cacheUrlStr:nil Completion:completion exceptions:exceptions error:failure];
 }
 
-- (void)postWithClass:(Class)classObj Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure cacheUrlStr:(NSString *)cacheUrlStr chcheObjectCallBackBlock:(void (^)(id))chcheObjectCallBackBlock{
+- (void)postWithClass:(Class)classObj Completion:(void (^)(id))completion exceptions:(void (^)(id))exceptions error:(void (^)(NSError *))failure cacheUrlStr:(NSString *)cacheUrlStr cacheObjectCallBackBlock:(void (^)(id))cacheObjectCallBackBlock{
     
     //read local disk cache
     if ([[VCCacheManger shareManager] objectIsInCacheWithUrlStr:cacheUrlStr]) {
         id obj = [[VCCacheManger shareManager] readDataFromCacheWithUrlStr:cacheUrlStr];
         if (!obj) {
-            chcheObjectCallBackBlock(obj);
+            cacheObjectCallBackBlock(obj);
         }
     }
     [self p_postWithClass:classObj isCache:YES cacheUrlStr:cacheUrlStr Completion:completion exceptions:exceptions error:failure];

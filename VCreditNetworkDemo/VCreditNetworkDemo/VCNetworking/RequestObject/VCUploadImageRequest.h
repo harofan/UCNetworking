@@ -15,10 +15,10 @@
  */
 - (void)postWithimages:(NSArray *)imgArray
       imageFilePathStr:(NSString *)imageFilePathStr
-              classObj:(Class )classObj
-              progress:(void (^)(NSProgress *  ))progressCallBack
-uploadProgressCompletion:(void (^)(id ))completion
-            exceptions:(void (^)(id ))exceptions
-                 error:(void (^)(NSError *))failure;
+              classObj:(Class)classObj
+              progress:(void(^)(NSProgress *))progressCallBack
+uploadProgressCompletion:(void (^)(id))completion
+            exceptions:(void(^)(id))exceptions
+                 error:(void(^)(NSError *))failure;
 
 @end

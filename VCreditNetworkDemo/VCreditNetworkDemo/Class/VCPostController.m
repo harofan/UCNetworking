@@ -32,11 +32,12 @@
 #pragma mark load data
 - (void)p_loadData{
     
-    [[VCNetworkingManager shareManager] postUrl:@"/version/newVersion" params:nil class:[VCShareModel class] completion:^(VCShareModel *model) {
+    [[VCNetworkingManager shareManager] postUrl:@"" params:nil class:[VCShareModel class] completion:^(VCShareModel *model) {
         NSLog(@"%@",model.downloadUrl);
     }error:^(NSError *error) {
         NSLog(@"%@",error);
     }];
+    
 }
 
 @end

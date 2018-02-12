@@ -67,7 +67,7 @@
      completion:(void(^)(id))completion
      exceptions:(void(^)(id))exceptions
           error:(void(^)(NSError *))failure
-chcheObjectCallBackBlock:(void(^)(id cacheObj))chcheObjectCallBackBlock;
+cacheObjectCallBackBlock:(void(^)(id cacheObj))cacheObjectCallBackBlock;
 
 #pragma mark POST IMAGE
 - (void)postUrl:(NSString *)url

@@ -15,10 +15,10 @@
 - (void)postWithimages:(NSArray *)imgArray
       imageFilePathStr:(NSString *)imageFilePathStr
               classObj:(Class)classObj
-              progress:(void (^)(NSProgress * _Nonnull ))progressCallBack
+              progress:(void(^)(NSProgress *))progressCallBack
 uploadProgressCompletion:(void (^)(id))completion
-            exceptions:(void (^)(id))exceptions
-                 error:(void (^)(NSError *))failure{
+            exceptions:(void(^)(id))exceptions
+                 error:(void(^)(NSError *))failure{
     
     //iPhone network activity
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
