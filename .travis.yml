@@ -1,4 +1,4 @@
 language: objective-c
-osx_image: xcode8
-xcode_workspace: VCreditNetworkDemo/VCreditNetworkDemo.xcworkspace
-xcode_scheme: VCreditNetworkDemo
+script:
+  - xctool -workspace VCreditNetworkDemo.xcworkspace -scheme VCreditNetworkDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  
