@@ -1,0 +1,4 @@
+language: objective-c
+osx_image: xcode8
+xcode_workspace: VCreditNetworkDemo/VCreditNetworkDemo.xcworkspace
+xcode_scheme: VCreditNetworkDemo
