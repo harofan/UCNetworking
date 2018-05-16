@@ -10,6 +10,7 @@
 #import "VCNetworkingManager.h"
 #import "VCResponsobjParser.h"
 #import "VCCacheManger.h"
+#import <YYModel.h>
 
 @implementation VCPostRequest
 
@@ -23,8 +24,9 @@
     //read local disk cache
     if ([[VCCacheManger shareManager] objectIsInCacheWithUrlStr:cacheUrlStr]) {
         id obj = [[VCCacheManger shareManager] readDataFromCacheWithUrlStr:cacheUrlStr];
-        if (!obj) {
-            cacheObjectCallBackBlock(obj);
+        if (!obj && [obj isKindOfClass:[NSDictionary class]] && cacheObjectCallBackBlock) {
+            VCBaseModel *model = [classObj  yy_modelWithJSON:(NSDictionary *)obj];
+            cacheObjectCallBackBlock(model);
         }
     }
     [self p_postWithClass:classObj isCache:YES cacheUrlStr:cacheUrlStr Completion:completion exceptions:exceptions error:failure];
