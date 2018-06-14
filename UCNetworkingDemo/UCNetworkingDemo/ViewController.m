@@ -19,17 +19,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [[UCNetworkingManager shareManager] postUrl:@"" cacheUrl:@"" params:nil completion:^(NSDictionary *responseObject, UCAPIManagerResponseStatesType responseStates) {
-//        NSLog(@"%@",responseObject);
+        
     } failure:^(NSError *error) {
-//        NSLog(@"%@",error);
+        
     } cacheDictCallBackBlock:^(NSDictionary *cacheDict) {
-//        NSLog(@"cache:%@",cacheDict);
+        
     }];
-    
-    
+   
 }
 - (IBAction)didClickNextButton:(id)sender {
-
+    
 }
 
 @end

@@ -62,9 +62,9 @@ cacheDictCallBackBlock:(void(^)(NSDictionary *cacheDict))cacheDictCallBackBlock;
 - (NSURLSessionDataTask *)getUrl:(NSString *)url
       cacheUrl:(NSString *)cacheUrl
         params:(NSDictionary *)params
-    completion:(void (^)(NSDictionary *, UCAPIManagerResponseStatesType))completion
-       failure:(void (^)(NSError *))failure
-cacheDictCallBackBlock:(void (^)(NSDictionary *))cacheDictCallBackBlock;
+    completion:(void (^)(NSDictionary *responseObject, UCAPIManagerResponseStatesType responseStates))completion
+       failure:(void (^)(NSError *error))failure
+cacheDictCallBackBlock:(void (^)(NSDictionary *cacheDict))cacheDictCallBackBlock;
 
 #pragma mark - cancel request
 - (void)cancelAllRequest;

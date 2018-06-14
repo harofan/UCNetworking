@@ -128,9 +128,9 @@ static UCNetworkingManager *_share = nil;
 - (NSURLSessionDataTask *)getUrl:(NSString *)url
                         cacheUrl:(NSString *)cacheUrl
                           params:(NSDictionary *)params
-                      completion:(void (^)(NSDictionary *, UCAPIManagerResponseStatesType))completion
-                         failure:(void (^)(NSError *))failure
-          cacheDictCallBackBlock:(void (^)(NSDictionary *))cacheDictCallBackBlock{
+                      completion:(void (^)(NSDictionary *responseObject, UCAPIManagerResponseStatesType responseStates))completion
+                         failure:(void (^)(NSError *error))failure
+          cacheDictCallBackBlock:(void (^)(NSDictionary *cacheDict))cacheDictCallBackBlock{
     NSString *urlStr = [NSString stringWithFormat:@"%@%@",self.formatUrlStr,url];
     UCBaseRequest *request = [[UCBaseRequest alloc] initWithUrlStr:urlStr requestType:UCAPIManagerRequestTypeGet parameters:params];
     request.httpManager = self.manager;
