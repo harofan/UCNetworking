@@ -7,7 +7,7 @@
 //
 
 #import "UCCacheManager.h"
-#import <YYCache.h>
+#import <YYCache/YYCache.h>
 @interface UCCacheManager()
 @property (nonatomic, strong) YYCache *cache;
 @end
