@@ -7,7 +7,10 @@ Pod::Spec.new do |s|
     s.authors      = {'RPGLiker' => 'fanyang_32012@outlook.com'}
     s.platform     = :ios, '9.0'
     s.source       = {:git => 'https://github.com/RPGLiker/UCNetworking.git', :tag => '1.0'}
-    s.source_files = 'UCNetworking/**/*.{h,m}'
+    # s.source_files = 'UCNetworkingDemo/UCNetworkingDemo/UCNetworking/**/*.{h,m}'
+    s.source_files = 'UCNetworkingDemo/**/*.{h,m}'
     # s.resource     = 'MJRefresh/MJRefresh.bundle'
     s.requires_arc = true
+    s.dependency ' AFNetworking '
+    s.dependency ' YYCache '
 end

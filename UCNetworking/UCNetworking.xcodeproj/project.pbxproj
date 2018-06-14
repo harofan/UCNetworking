@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6D69A7920D269F300F1137D /* UCCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A5A20D269F200F1137D /* UCCacheManager.m */; };
+		A6D69A7A20D269F300F1137D /* UCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A5D20D269F200F1137D /* UCParser.m */; };
+		A6D69A7B20D269F300F1137D /* UCNetworkingUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A6020D269F200F1137D /* UCNetworkingUrlConfig.m */; };
+		A6D69A7C20D269F300F1137D /* UCGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A6420D269F200F1137D /* UCGetRequest.m */; };
+		A6D69A7D20D269F300F1137D /* UCPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A6520D269F200F1137D /* UCPostRequest.m */; };
+		A6D69A7E20D269F300F1137D /* UCBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A6820D269F200F1137D /* UCBaseRequest.m */; };
+		A6D69A7F20D269F300F1137D /* UCNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A6D20D269F200F1137D /* UCNetworkingManager.m */; };
+		A6D69A8020D269F300F1137D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D69A6F20D269F200F1137D /* Assets.xcassets */; };
+		A6D69A8120D269F300F1137D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A7020D269F200F1137D /* ViewController.m */; };
+		A6D69A8220D269F300F1137D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D69A7120D269F200F1137D /* LaunchScreen.storyboard */; };
+		A6D69A8320D269F300F1137D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D69A7320D269F200F1137D /* Main.storyboard */; };
+		A6D69A8420D269F300F1137D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A7520D269F200F1137D /* main.m */; };
+		A6D69A8520D269F300F1137D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69A7620D269F200F1137D /* AppDelegate.m */; };
+		A6D69A8620D269F300F1137D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D69A7720D269F200F1137D /* Info.plist */; };
+		D5CA09E6B56AD2E850F88E6A /* libPods-UCNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62972855B932F540A8E987C3 /* libPods-UCNetworking.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B2D9581B4314D6BA5F9CD3D /* Pods-UCNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCNetworking/Pods-UCNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		1FEF3D30D869CA99567AB0DA /* Pods-UCNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCNetworking/Pods-UCNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		5154E45B238CA029E39B0EED /* Pods-UCNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCNetworkingDemo/Pods-UCNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		62972855B932F540A8E987C3 /* libPods-UCNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A643E11D20CFCD2B006D7BE9 /* UCNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D69A5620D269F200F1137D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6D69A5920D269F200F1137D /* UCCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCCacheManager.h; sourceTree = "<group>"; };
+		A6D69A5A20D269F200F1137D /* UCCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCCacheManager.m; sourceTree = "<group>"; };
+		A6D69A5C20D269F200F1137D /* UCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCParser.h; sourceTree = "<group>"; };
+		A6D69A5D20D269F200F1137D /* UCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCParser.m; sourceTree = "<group>"; };
+		A6D69A5F20D269F200F1137D /* UCNetworkingEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworkingEnum.h; sourceTree = "<group>"; };
+		A6D69A6020D269F200F1137D /* UCNetworkingUrlConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCNetworkingUrlConfig.m; sourceTree = "<group>"; };
+		A6D69A6120D269F200F1137D /* UCNetworkingUrlConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworkingUrlConfig.h; sourceTree = "<group>"; };
+		A6D69A6320D269F200F1137D /* UCPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPostRequest.h; sourceTree = "<group>"; };
+		A6D69A6420D269F200F1137D /* UCGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCGetRequest.m; sourceTree = "<group>"; };
+		A6D69A6520D269F200F1137D /* UCPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCPostRequest.m; sourceTree = "<group>"; };
+		A6D69A6620D269F200F1137D /* UCGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCGetRequest.h; sourceTree = "<group>"; };
+		A6D69A6820D269F200F1137D /* UCBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCBaseRequest.m; sourceTree = "<group>"; };
+		A6D69A6920D269F200F1137D /* UCBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCBaseRequest.h; sourceTree = "<group>"; };
+		A6D69A6C20D269F200F1137D /* UCNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworkingManager.h; sourceTree = "<group>"; };
+		A6D69A6D20D269F200F1137D /* UCNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCNetworkingManager.m; sourceTree = "<group>"; };
+		A6D69A6E20D269F200F1137D /* UCNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworking.h; sourceTree = "<group>"; };
+		A6D69A6F20D269F200F1137D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6D69A7020D269F200F1137D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6D69A7220D269F200F1137D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6D69A7420D269F200F1137D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6D69A7520D269F200F1137D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6D69A7620D269F200F1137D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6D69A7720D269F200F1137D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D69A7820D269F200F1137D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF4B1439B16D2CB6181F472A /* libPods-UCNetworkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCNetworkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD00775938644E93B35B62F7 /* Pods-UCNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCNetworkingDemo/Pods-UCNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A643E11A20CFCD2B006D7BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CA09E6B56AD2E850F88E6A /* libPods-UCNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A643E11420CFCD2B006D7BE9 = {
+			isa = PBXGroup;
+			children = (
+				A6D69A5520D269F200F1137D /* UCNetworking */,
+				A643E11E20CFCD2B006D7BE9 /* Products */,
+				C1690B32FC0AC7BA4C679465 /* Pods */,
+				E7EFAD3649838B097C149E9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A643E11E20CFCD2B006D7BE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A643E11D20CFCD2B006D7BE9 /* UCNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6D69A5520D269F200F1137D /* UCNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A5720D269F200F1137D /* UCNetworking */,
+				A6D69A5620D269F200F1137D /* AppDelegate.h */,
+				A6D69A7620D269F200F1137D /* AppDelegate.m */,
+				A6D69A6F20D269F200F1137D /* Assets.xcassets */,
+				A6D69A7820D269F200F1137D /* ViewController.h */,
+				A6D69A7020D269F200F1137D /* ViewController.m */,
+				A6D69A7120D269F200F1137D /* LaunchScreen.storyboard */,
+				A6D69A7320D269F200F1137D /* Main.storyboard */,
+				A6D69A7520D269F200F1137D /* main.m */,
+				A6D69A7720D269F200F1137D /* Info.plist */,
+			);
+			path = UCNetworking;
+			sourceTree = "<group>";
+		};
+		A6D69A5720D269F200F1137D /* UCNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A6E20D269F200F1137D /* UCNetworking.h */,
+				A6D69A5820D269F200F1137D /* Cache */,
+				A6D69A5B20D269F200F1137D /* RespondobjParser */,
+				A6D69A5E20D269F200F1137D /* Config */,
+				A6D69A6220D269F200F1137D /* RequestObject */,
+				A6D69A6720D269F200F1137D /* BaseObject */,
+				A6D69A6A20D269F200F1137D /* Protocol */,
+				A6D69A6B20D269F200F1137D /* Manager */,
+			);
+			path = UCNetworking;
+			sourceTree = "<group>";
+		};
+		A6D69A5820D269F200F1137D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A5920D269F200F1137D /* UCCacheManager.h */,
+				A6D69A5A20D269F200F1137D /* UCCacheManager.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		A6D69A5B20D269F200F1137D /* RespondobjParser */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A5C20D269F200F1137D /* UCParser.h */,
+				A6D69A5D20D269F200F1137D /* UCParser.m */,
+			);
+			path = RespondobjParser;
+			sourceTree = "<group>";
+		};
+		A6D69A5E20D269F200F1137D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A5F20D269F200F1137D /* UCNetworkingEnum.h */,
+				A6D69A6020D269F200F1137D /* UCNetworkingUrlConfig.m */,
+				A6D69A6120D269F200F1137D /* UCNetworkingUrlConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A6D69A6220D269F200F1137D /* RequestObject */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A6320D269F200F1137D /* UCPostRequest.h */,
+				A6D69A6420D269F200F1137D /* UCGetRequest.m */,
+				A6D69A6520D269F200F1137D /* UCPostRequest.m */,
+				A6D69A6620D269F200F1137D /* UCGetRequest.h */,
+			);
+			path = RequestObject;
+			sourceTree = "<group>";
+		};
+		A6D69A6720D269F200F1137D /* BaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A6820D269F200F1137D /* UCBaseRequest.m */,
+				A6D69A6920D269F200F1137D /* UCBaseRequest.h */,
+			);
+			path = BaseObject;
+			sourceTree = "<group>";
+		};
+		A6D69A6A20D269F200F1137D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A6D69A6B20D269F200F1137D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A6D69A6C20D269F200F1137D /* UCNetworkingManager.h */,
+				A6D69A6D20D269F200F1137D /* UCNetworkingManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C1690B32FC0AC7BA4C679465 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD00775938644E93B35B62F7 /* Pods-UCNetworkingDemo.debug.xcconfig */,
+				5154E45B238CA029E39B0EED /* Pods-UCNetworkingDemo.release.xcconfig */,
+				1B2D9581B4314D6BA5F9CD3D /* Pods-UCNetworking.debug.xcconfig */,
+				1FEF3D30D869CA99567AB0DA /* Pods-UCNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7EFAD3649838B097C149E9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B1439B16D2CB6181F472A /* libPods-UCNetworkingDemo.a */,
+				62972855B932F540A8E987C3 /* libPods-UCNetworking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A643E11C20CFCD2B006D7BE9 /* UCNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A643E13320CFCD2D006D7BE9 /* Build configuration list for PBXNativeTarget "UCNetworking" */;
+			buildPhases = (
+				55C428CC9D81C4B946F0BA3D /* [CP] Check Pods Manifest.lock */,
+				A643E11920CFCD2B006D7BE9 /* Sources */,
+				A643E11A20CFCD2B006D7BE9 /* Frameworks */,
+				A643E11B20CFCD2B006D7BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UCNetworking;
+			productName = UCNetworkingDemo;
+			productReference = A643E11D20CFCD2B006D7BE9 /* UCNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A643E11520CFCD2B006D7BE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UC;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = RPGLiker;
+				TargetAttributes = {
+					A643E11C20CFCD2B006D7BE9 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A643E11820CFCD2B006D7BE9 /* Build configuration list for PBXProject "UCNetworking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A643E11420CFCD2B006D7BE9;
+			productRefGroup = A643E11E20CFCD2B006D7BE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A643E11C20CFCD2B006D7BE9 /* UCNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A643E11B20CFCD2B006D7BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D69A8620D269F300F1137D /* Info.plist in Resources */,
+				A6D69A8320D269F300F1137D /* Main.storyboard in Resources */,
+				A6D69A8020D269F300F1137D /* Assets.xcassets in Resources */,
+				A6D69A8220D269F300F1137D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55C428CC9D81C4B946F0BA3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UCNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A643E11920CFCD2B006D7BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D69A7D20D269F300F1137D /* UCPostRequest.m in Sources */,
+				A6D69A7A20D269F300F1137D /* UCParser.m in Sources */,
+				A6D69A8120D269F300F1137D /* ViewController.m in Sources */,
+				A6D69A7E20D269F300F1137D /* UCBaseRequest.m in Sources */,
+				A6D69A8520D269F300F1137D /* AppDelegate.m in Sources */,
+				A6D69A7B20D269F300F1137D /* UCNetworkingUrlConfig.m in Sources */,
+				A6D69A7C20D269F300F1137D /* UCGetRequest.m in Sources */,
+				A6D69A7F20D269F300F1137D /* UCNetworkingManager.m in Sources */,
+				A6D69A8420D269F300F1137D /* main.m in Sources */,
+				A6D69A7920D269F300F1137D /* UCCacheManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6D69A7120D269F200F1137D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D69A7220D269F200F1137D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6D69A7320D269F200F1137D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D69A7420D269F200F1137D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A643E13120CFCD2D006D7BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A643E13220CFCD2D006D7BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A643E13420CFCD2D006D7BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2D9581B4314D6BA5F9CD3D /* Pods-UCNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UCNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A643E13520CFCD2D006D7BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FEF3D30D869CA99567AB0DA /* Pods-UCNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UCNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A643E11820CFCD2B006D7BE9 /* Build configuration list for PBXProject "UCNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A643E13120CFCD2D006D7BE9 /* Debug */,
+				A643E13220CFCD2D006D7BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A643E13320CFCD2D006D7BE9 /* Build configuration list for PBXNativeTarget "UCNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A643E13420CFCD2D006D7BE9 /* Debug */,
+				A643E13520CFCD2D006D7BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A643E11520CFCD2B006D7BE9 /* Project object */;
+}
