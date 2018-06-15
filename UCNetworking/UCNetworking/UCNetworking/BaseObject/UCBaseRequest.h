@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UCNetworkingEnum.h"
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 
 @interface UCBaseRequest : NSObject
 

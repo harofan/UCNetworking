@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 #import "UCNetworkingEnum.h"
 
 @class UCNetworkingManager;
