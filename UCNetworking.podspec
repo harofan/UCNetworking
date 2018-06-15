@@ -5,10 +5,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/RPGLiker/UCNetworking"
   s.license      = "MIT"
   s.author       = { "RPGLiker" => "fanyang_32012@outlook.com" }
-  s.platform     = :ios
+  s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/RPGLiker/UCNetworking.git", :tag => "#{s.version}" }
-  s.source_files  = "UCNetworking/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "UCNetworking/UCNetworking/**/*.{h,m}"
+  s.requires_arc = true
+  # s.exclude_files = "Classes/Exclude"
   s.dependency 'AFNetworking'
   s.dependency 'YYCache'
 
