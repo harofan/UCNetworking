@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20A0F58FA67A1DD6D5F181C8 /* libPods-UCNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CE4474CDA3CF3B780A0122 /* libPods-UCNetworking.a */; };
+		A604D68C20D38A25005E4473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D68B20D38A25005E4473 /* AppDelegate.m */; };
+		A604D68F20D38A25005E4473 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D68E20D38A25005E4473 /* ViewController.m */; };
+		A604D69220D38A25005E4473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A604D69020D38A25005E4473 /* Main.storyboard */; };
+		A604D69420D38A26005E4473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A604D69320D38A26005E4473 /* Assets.xcassets */; };
+		A604D69720D38A26005E4473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A604D69520D38A26005E4473 /* LaunchScreen.storyboard */; };
+		A604D69A20D38A26005E4473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D69920D38A26005E4473 /* main.m */; };
+		A604D6B720D38B3F005E4473 /* UCCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D6A320D38B3F005E4473 /* UCCacheManager.m */; };
+		A604D6B820D38B3F005E4473 /* UCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D6A620D38B3F005E4473 /* UCParser.m */; };
+		A604D6B920D38B3F005E4473 /* UCNetworkingUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D6A920D38B3F005E4473 /* UCNetworkingUrlConfig.m */; };
+		A604D6BA20D38B3F005E4473 /* UCGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D6AD20D38B3F005E4473 /* UCGetRequest.m */; };
+		A604D6BB20D38B3F005E4473 /* UCPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D6AE20D38B3F005E4473 /* UCPostRequest.m */; };
+		A604D6BC20D38B3F005E4473 /* UCBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D6B120D38B3F005E4473 /* UCBaseRequest.m */; };
+		A604D6BD20D38B3F005E4473 /* UCNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A604D6B520D38B3F005E4473 /* UCNetworkingManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AA7E7F0682488EEAF5C1D81 /* Pods-UCNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCNetworking/Pods-UCNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		4D74A9D8502B5CAEFF14ACFF /* Pods-UCNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCNetworking/Pods-UCNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		76CE4474CDA3CF3B780A0122 /* libPods-UCNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A604D68720D38A25005E4473 /* UCNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A604D68A20D38A25005E4473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A604D68B20D38A25005E4473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A604D68D20D38A25005E4473 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A604D68E20D38A25005E4473 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A604D69120D38A25005E4473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A604D69320D38A26005E4473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A604D69620D38A26005E4473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A604D69820D38A26005E4473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A604D69920D38A26005E4473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A604D6A220D38B3F005E4473 /* UCCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCCacheManager.h; sourceTree = "<group>"; };
+		A604D6A320D38B3F005E4473 /* UCCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCCacheManager.m; sourceTree = "<group>"; };
+		A604D6A520D38B3F005E4473 /* UCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCParser.h; sourceTree = "<group>"; };
+		A604D6A620D38B3F005E4473 /* UCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCParser.m; sourceTree = "<group>"; };
+		A604D6A820D38B3F005E4473 /* UCNetworkingEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworkingEnum.h; sourceTree = "<group>"; };
+		A604D6A920D38B3F005E4473 /* UCNetworkingUrlConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCNetworkingUrlConfig.m; sourceTree = "<group>"; };
+		A604D6AA20D38B3F005E4473 /* UCNetworkingUrlConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworkingUrlConfig.h; sourceTree = "<group>"; };
+		A604D6AC20D38B3F005E4473 /* UCPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPostRequest.h; sourceTree = "<group>"; };
+		A604D6AD20D38B3F005E4473 /* UCGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCGetRequest.m; sourceTree = "<group>"; };
+		A604D6AE20D38B3F005E4473 /* UCPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCPostRequest.m; sourceTree = "<group>"; };
+		A604D6AF20D38B3F005E4473 /* UCGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCGetRequest.h; sourceTree = "<group>"; };
+		A604D6B120D38B3F005E4473 /* UCBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCBaseRequest.m; sourceTree = "<group>"; };
+		A604D6B220D38B3F005E4473 /* UCBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCBaseRequest.h; sourceTree = "<group>"; };
+		A604D6B420D38B3F005E4473 /* UCNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworkingManager.h; sourceTree = "<group>"; };
+		A604D6B520D38B3F005E4473 /* UCNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCNetworkingManager.m; sourceTree = "<group>"; };
+		A604D6B620D38B3F005E4473 /* UCNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCNetworking.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A604D68420D38A25005E4473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A0F58FA67A1DD6D5F181C8 /* libPods-UCNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		395835EA733373F8CAC744B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D74A9D8502B5CAEFF14ACFF /* Pods-UCNetworking.debug.xcconfig */,
+				2AA7E7F0682488EEAF5C1D81 /* Pods-UCNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A05654C05F08DB7B5463DA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76CE4474CDA3CF3B780A0122 /* libPods-UCNetworking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A604D67E20D38A25005E4473 = {
+			isa = PBXGroup;
+			children = (
+				A604D68920D38A25005E4473 /* UCNetworking */,
+				A604D68820D38A25005E4473 /* Products */,
+				395835EA733373F8CAC744B7 /* Pods */,
+				A05654C05F08DB7B5463DA7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A604D68820D38A25005E4473 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A604D68720D38A25005E4473 /* UCNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A604D68920D38A25005E4473 /* UCNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6A020D38B3F005E4473 /* UCNetworking */,
+				A604D68A20D38A25005E4473 /* AppDelegate.h */,
+				A604D68B20D38A25005E4473 /* AppDelegate.m */,
+				A604D68D20D38A25005E4473 /* ViewController.h */,
+				A604D68E20D38A25005E4473 /* ViewController.m */,
+				A604D69020D38A25005E4473 /* Main.storyboard */,
+				A604D69320D38A26005E4473 /* Assets.xcassets */,
+				A604D69520D38A26005E4473 /* LaunchScreen.storyboard */,
+				A604D69820D38A26005E4473 /* Info.plist */,
+				A604D69920D38A26005E4473 /* main.m */,
+			);
+			path = UCNetworking;
+			sourceTree = "<group>";
+		};
+		A604D6A020D38B3F005E4473 /* UCNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6A120D38B3F005E4473 /* Cache */,
+				A604D6A420D38B3F005E4473 /* RespondobjParser */,
+				A604D6A720D38B3F005E4473 /* Config */,
+				A604D6AB20D38B3F005E4473 /* RequestObject */,
+				A604D6B020D38B3F005E4473 /* BaseObject */,
+				A604D6B320D38B3F005E4473 /* Manager */,
+				A604D6B620D38B3F005E4473 /* UCNetworking.h */,
+			);
+			path = UCNetworking;
+			sourceTree = "<group>";
+		};
+		A604D6A120D38B3F005E4473 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6A220D38B3F005E4473 /* UCCacheManager.h */,
+				A604D6A320D38B3F005E4473 /* UCCacheManager.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		A604D6A420D38B3F005E4473 /* RespondobjParser */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6A520D38B3F005E4473 /* UCParser.h */,
+				A604D6A620D38B3F005E4473 /* UCParser.m */,
+			);
+			path = RespondobjParser;
+			sourceTree = "<group>";
+		};
+		A604D6A720D38B3F005E4473 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6A820D38B3F005E4473 /* UCNetworkingEnum.h */,
+				A604D6A920D38B3F005E4473 /* UCNetworkingUrlConfig.m */,
+				A604D6AA20D38B3F005E4473 /* UCNetworkingUrlConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A604D6AB20D38B3F005E4473 /* RequestObject */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6AC20D38B3F005E4473 /* UCPostRequest.h */,
+				A604D6AD20D38B3F005E4473 /* UCGetRequest.m */,
+				A604D6AE20D38B3F005E4473 /* UCPostRequest.m */,
+				A604D6AF20D38B3F005E4473 /* UCGetRequest.h */,
+			);
+			path = RequestObject;
+			sourceTree = "<group>";
+		};
+		A604D6B020D38B3F005E4473 /* BaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6B120D38B3F005E4473 /* UCBaseRequest.m */,
+				A604D6B220D38B3F005E4473 /* UCBaseRequest.h */,
+			);
+			path = BaseObject;
+			sourceTree = "<group>";
+		};
+		A604D6B320D38B3F005E4473 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A604D6B420D38B3F005E4473 /* UCNetworkingManager.h */,
+				A604D6B520D38B3F005E4473 /* UCNetworkingManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A604D68620D38A25005E4473 /* UCNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A604D69D20D38A26005E4473 /* Build configuration list for PBXNativeTarget "UCNetworking" */;
+			buildPhases = (
+				D7CE4EBA5A0F4BA30A23B22D /* [CP] Check Pods Manifest.lock */,
+				A604D68320D38A25005E4473 /* Sources */,
+				A604D68420D38A25005E4473 /* Frameworks */,
+				A604D68520D38A25005E4473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UCNetworking;
+			productName = UCNetworking;
+			productReference = A604D68720D38A25005E4473 /* UCNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A604D67F20D38A25005E4473 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = RPGLiker;
+				TargetAttributes = {
+					A604D68620D38A25005E4473 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A604D68220D38A25005E4473 /* Build configuration list for PBXProject "UCNetworking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A604D67E20D38A25005E4473;
+			productRefGroup = A604D68820D38A25005E4473 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A604D68620D38A25005E4473 /* UCNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A604D68520D38A25005E4473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A604D69720D38A26005E4473 /* LaunchScreen.storyboard in Resources */,
+				A604D69420D38A26005E4473 /* Assets.xcassets in Resources */,
+				A604D69220D38A25005E4473 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7CE4EBA5A0F4BA30A23B22D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UCNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A604D68320D38A25005E4473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A604D6B820D38B3F005E4473 /* UCParser.m in Sources */,
+				A604D6BB20D38B3F005E4473 /* UCPostRequest.m in Sources */,
+				A604D6B920D38B3F005E4473 /* UCNetworkingUrlConfig.m in Sources */,
+				A604D68F20D38A25005E4473 /* ViewController.m in Sources */,
+				A604D69A20D38A26005E4473 /* main.m in Sources */,
+				A604D6B720D38B3F005E4473 /* UCCacheManager.m in Sources */,
+				A604D68C20D38A25005E4473 /* AppDelegate.m in Sources */,
+				A604D6BD20D38B3F005E4473 /* UCNetworkingManager.m in Sources */,
+				A604D6BA20D38B3F005E4473 /* UCGetRequest.m in Sources */,
+				A604D6BC20D38B3F005E4473 /* UCBaseRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A604D69020D38A25005E4473 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A604D69120D38A25005E4473 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A604D69520D38A26005E4473 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A604D69620D38A26005E4473 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A604D69B20D38A26005E4473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A604D69C20D38A26005E4473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A604D69E20D38A26005E4473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D74A9D8502B5CAEFF14ACFF /* Pods-UCNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UCNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A604D69F20D38A26005E4473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA7E7F0682488EEAF5C1D81 /* Pods-UCNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UCNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A604D68220D38A25005E4473 /* Build configuration list for PBXProject "UCNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A604D69B20D38A26005E4473 /* Debug */,
+				A604D69C20D38A26005E4473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A604D69D20D38A26005E4473 /* Build configuration list for PBXNativeTarget "UCNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A604D69E20D38A26005E4473 /* Debug */,
+				A604D69F20D38A26005E4473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A604D67F20D38A25005E4473 /* Project object */;
+}
