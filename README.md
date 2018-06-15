@@ -5,6 +5,12 @@
 
 以前的框架是为了直接在网络请求完毕后就将json转化为我们需要的model,但为了新的路由组件化框架,降低耦合所以去除了Model这个环节,这个是重构之后的.
 
+## 安装
+
+		pod 'UCNetworking'
+		
+会自动安装依赖库`AFNetworking`和`YYCache`
+
 ## 一般使用
 
 - 一般的`POST`请求
