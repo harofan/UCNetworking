@@ -7,5 +7,5 @@ target 'UCNetworking' do
 
   # Pods for UCNetworking
 pod 'AFNetworking'
-pod 'YYCache'
+pod 'YYKit'
 end
